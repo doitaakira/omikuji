@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <script src="components/loader.js"></script>
+    
+    <link rel="stylesheet" href="components/loader.css" />
+    
+    <style>
+        body {
+            background-image: url("images/omikuji-bg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        #hako {
+            margin-top: 15%;
+            margin-left : 0;
+            margin-right : 0;
+        }
+        
+        img {
+           width: 70%; 
+        }
+
+        #bottombar {
+            position: absolute;
+            bottom: 30px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div id="hako">
+        <img id="saisyo" src="images/omikuji-box.png" />
+        <img id="kekka" style="display : none;"/>
+    </div>
+    <div id="bottombar">
+        <a href="javaScript:shImg('myIMG1')">
+          <img id="button" name="myIMG" src="images/omikuji-btn-hajimeru.png" style="position:static;visibility:visible"　onclick="move();shIMG(myIMG)">
+          </a>
+    </div>
+    <script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"　></script>
+    <script type="text/javascript" src="components/ugoki.js"></script>
+</body>
+</html>
