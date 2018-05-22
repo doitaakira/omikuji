@@ -32,6 +32,8 @@
             bottom: 30px;
             width: 100%;
         }
+        
+        
     </style>
 </head>
 <body>
@@ -39,10 +41,8 @@
         <img id="saisyo" src="images/omikuji-box.png" />
         <img id="kekka" style="display : none;"/>
     </div>
-    <div id="bottombar">
-        <a href="javaScript:shImg('myIMG1')">
-          <img id="button" name="myIMG" src="images/omikuji-btn-hajimeru.png" style="position:static;visibility:visible"　onclick="move();shIMG(myIMG)">
-          </a>
+    <div class="bottombar">
+      <img id="button" src="images/omikuji-btn-hajimeru.png" onclick="move()">
     </div>
     <script type="text/javascript" src="https://cdn.rawgit.com/alexgibson/shake.js/master/shake.js"　></script>
     <script type="text/javascript" src="components/ugoki.js"></script>

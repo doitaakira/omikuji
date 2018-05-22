@@ -1,8 +1,4 @@
     //listen to shake event
-function shImg(iName){
-	iObj = document.images[iName].style;
-	if (iObj.visibility == "visible") iObj.visibility = "hidden"; else iObj.visibility = "visible";
-}
 
   function move() { var shakeEvent = new Shake({threshold: 15});
     shakeEvent.start();
@@ -33,5 +29,6 @@ function shImg(iName){
             document.getElementById("saisyo").style["display"] = "none";
             document.getElementById("kekka").src = "images/" + image_name;
             document.getElementById("kekka").style["display"] = "inline";
+             document.getElementById("button").src = "images/omikuji-btn-yarinaosu.png";
         }
     
